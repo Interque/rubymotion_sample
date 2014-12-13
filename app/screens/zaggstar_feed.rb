@@ -24,7 +24,6 @@ class ZaggstarFeed < PM::TableScreen
 
 	def open_zaggle(args)
 		open ZaggleScreen.new(zaggle_id: args[:zaggle_id])
-
 	end
 
 	def table_data

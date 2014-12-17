@@ -10,5 +10,12 @@ end
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
-  app.name = 'Zaggstar'
+  app.name = 'Interque'
+
+   #### Application Artwork. First one is
+  app.icons = ["Icon.png", "Icon@2x.png"]
+
+  app.info_plist['UILaunchImages'] =[
+  	{ 'UILaunchImageName' => 'Default' }
+  ]
 end

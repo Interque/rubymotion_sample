@@ -1,9 +1,13 @@
 class ZaggleScreen < PM::Screen
-	attr_accessor :zaggle_id
+	attr_accessor :zaggle_id, :jobs_json
 
 	def on_load
 		self.title = "Zaggle ##{self.zaggle_id}"
 	end
+
+	# def jobs_json
+	# 	NSJSONSerialization.dataWithJSONObject(params, options: 0, error: nil)
+	# end
 
 	def will_appear
 		set_attributes self.view, {

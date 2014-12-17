@@ -12,7 +12,7 @@ class HelpScreen < PM::WebScreen
 
 	def load_failed
 		UIAlert.alloc.initWithTitle('Failed to load', 
-			message: 'The help content failed to load sorry, double check that you have an internet connections',
+			message: 'Sorry, the job listings failed to load, double check that you have an internet connection',
 			delegate: nil,
 			cancelButtonTitle: 'OK',
 			otherButtonTitles: nil

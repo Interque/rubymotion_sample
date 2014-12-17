@@ -3,6 +3,7 @@ GEM
   specs:
     ProMotion (2.2.0)
       methadone (~> 1.7)
+    bubble-wrap-http (1.7.1)
     methadone (1.8.0)
       bundler
     rake (10.4.2)
@@ -12,4 +13,5 @@ PLATFORMS
 
 DEPENDENCIES
   ProMotion
+  bubble-wrap-http
   rake

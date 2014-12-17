@@ -9,7 +9,7 @@ class ZaggstarFeed < PM::TableScreen
 		updated_time_format: "%l:%M %p"
 
 	def on_load
-		set_nav_bar_button :left, title: "Help", action: :open_help_screen
+		set_nav_bar_button :left, title: "Jobs", action: :open_help_screen
 	end
 
 	def will_appear
@@ -25,6 +25,10 @@ class ZaggstarFeed < PM::TableScreen
 	def open_zaggle(args)
 		open ZaggleScreen.new(zaggle_id: args[:zaggle_id])
 	end
+
+	# def api_json
+	# 	@stuff = NSURL.URLWithString('https://guarded-everglades-4684.herokuapp.com/listings.json')
+	# end
 
 	def table_data
 		[{
